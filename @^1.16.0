@@ -1,0 +1,122 @@
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex c4f7e70..2211e33 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -2917,6 +2917,11 @@[m
+         "multicast-dns-service-types": "^1.1.0"[m
+       }[m
+     },[m
+[32m+[m[32m    "bootstrap": {[m
+[32m+[m[32m      "version": "4.4.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.4.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-tbx5cHubwE6e2ZG7nqM3g/FZ5PQEDMWmMGNrCUBVRPHXTJaH7CBDdsLeu3eCh3B1tzAxTnAbtmrzvWEvT2NNEA=="[m
+[32m+[m[32m    },[m
+     "brace-expansion": {[m
+       "version": "1.1.11",[m
+       "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",[m
+[36m@@ -3219,6 +3224,32 @@[m
+       "integrity": "sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==",[m
+       "dev": true[m
+     },[m
+[32m+[m[32m    "chart.js": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/chart.js/-/chart.js-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-+2jlOobSk52c1VU6fzkh3UwqHMdSlgH1xFv9FKMqHiNCpXsGPQa/+81AFa+i3jZ253Mq9aAycPwDjnn1XbRNNw==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "chartjs-color": "^2.1.0",[m
+[32m+[m[32m        "moment": "^2.10.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "chartjs-color": {[m
+[32m+[m[32m      "version": "2.4.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/chartjs-color/-/chartjs-color-2.4.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-haqOg1+Yebys/Ts/9bLo/BqUcONQOdr/hoEr2LLTRl6C5LXctUdHxsCYfvQVg5JIxITrfCNUDr4ntqmQk9+/0w==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "chartjs-color-string": "^0.6.0",[m
+[32m+[m[32m        "color-convert": "^1.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "chartjs-color-string": {[m
+[32m+[m[32m      "version": "0.6.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/chartjs-color-string/-/chartjs-color-string-0.6.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-TIB5OKn1hPJvO7JcteW4WY/63v6KwEdt6udfnDE9iCAZgy+V4SrbSxoIbTw/xkUIapjEI4ExGtD0+6D3KyFd7A==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "color-name": "^1.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "chokidar": {[m
+       "version": "3.3.1",[m
+       "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.3.1.tgz",[m
+[36m@@ -3428,7 +3459,6 @@[m
+       "version": "1.9.3",[m
+       "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz",[m
+       "integrity": "sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==",[m
+[31m-      "dev": true,[m
+       "requires": {[m
+         "color-name": "1.1.3"[m
+       }[m
+[36m@@ -3436,8 +3466,7 @@[m
+     "color-name": {[m
+       "version": "1.1.3",[m
+       "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz",[m
+[31m-      "integrity": "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=",[m
+[31m-      "dev": true[m
+[32m+[m[32m      "integrity": "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU="[m
+     },[m
+     "colors": {[m
+       "version": "1.1.2",[m
+[36m@@ -6329,6 +6358,11 @@[m
+         }[m
+       }[m
+     },[m
+[32m+[m[32m    "jquery": {[m
+[32m+[m[32m      "version": "3.4.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.4.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw=="[m
+[32m+[m[32m    },[m
+     "js-tokens": {[m
+       "version": "4.0.0",[m
+       "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",[m
+[36m@@ -7805,6 +7839,11 @@[m
+         }[m
+       }[m
+     },[m
+[32m+[m[32m    "moment": {[m
+[32m+[m[32m      "version": "2.24.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/moment/-/moment-2.24.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg=="[m
+[32m+[m[32m    },[m
+     "move-concurrently": {[m
+       "version": "1.0.1",[m
+       "resolved": "https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz",[m
+[36m@@ -8654,6 +8693,11 @@[m
+         "find-up": "^3.0.0"[m
+       }[m
+     },[m
+[32m+[m[32m    "popper.js": {[m
+[32m+[m[32m      "version": "1.16.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/popper.js/-/popper.js-1.16.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-+G+EkOPoE5S/zChTpmBSSDYmhXJ5PsW8eMhH8cP/CQHMFPBG/kC9Y5IIw6qNYgdJ+/COf0ddY2li28iHaZRSjw=="[m
+[32m+[m[32m    },[m
+     "portfinder": {[m
+       "version": "1.0.25",[m
+       "resolved": "https://registry.npmjs.org/portfinder/-/portfinder-1.0.25.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex e1dc606..0bc2413 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -19,6 +19,10 @@[m
+     "@angular/platform-browser": "~8.2.14",[m
+     "@angular/platform-browser-dynamic": "~8.2.14",[m
+     "@angular/router": "~8.2.14",[m
+[32m+[m[32m    "bootstrap": "^4.4.1",[m
+[32m+[m[32m    "chart.js": "^2.9.3",[m
+[32m+[m[32m    "jquery": "^3.4.1",[m
+[32m+[m[32m    "popper.js": "^1.16.0",[m
+     "rxjs": "~6.4.0",[m
+     "tslib": "^1.10.0",[m
+     "zone.js": "~0.9.1"[m
