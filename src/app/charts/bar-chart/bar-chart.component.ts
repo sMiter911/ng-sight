@@ -22,7 +22,7 @@ export class BarChartComponent implements OnInit {
   public barChartOptions: ChartOptions = {
     responsive: true,
     showLines: true
-  }
+  };
 
   constructor() { }
 
