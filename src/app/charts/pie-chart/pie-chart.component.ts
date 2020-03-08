@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ChartType, ChartOptions } from 'chart.js';
 import { Label } from 'ng2-charts';
-import _ from 'lodash';
+import * as _ from 'lodash';
 import { THEME_COLORS } from '../../shared/theme.colors';
 
 
