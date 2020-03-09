@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Server } from '../shared/server';
 import { ServerMessage } from '../shared/server-message';
+import { Server } from '../shared/server';
 
 @Component({
   selector: 'app-server',
@@ -9,51 +9,46 @@ import { ServerMessage } from '../shared/server-message';
 })
 export class ServerComponent implements OnInit {
 
-  @Input() serverInput: Server;
-  @Output() serverAction = new EventEmitter<ServerMessage>();
+  constructor() { }
 
   color: string;
   buttonText: string;
-  isLoading: boolean;
   serverStatus: string;
+  isLoading: boolean;
 
-  constructor() { }
+  @Input() serverInput: Server;
+  @Output() serverAction = new EventEmitter<ServerMessage>();
 
   ngOnInit() {
     this.setServerStatus(this.serverInput.isOnline);
   }
 
-  // toggleStatus(onlineStatus: boolean) {
-  //   console.log(this.serverInput.name + ':', onlineStatus);
-  //   this.setServerStatus(!onlineStatus);
-  // }
-
   setServerStatus(isOnline: boolean) {
     if (isOnline) {
       this.serverInput.isOnline = true;
       this.serverStatus = 'Online';
-      this.color = '#66bb6a';
+      this.color = '#66BB6A',
       this.buttonText = 'Shut Down';
     } else {
       this.serverInput.isOnline = false;
       this.serverStatus = 'Offline';
-      this.color = '#ff6b6b';
-      this.buttonText = 'Turn On';
+      this.color = '#FF6B6B';
+      this.buttonText = 'Start';
     }
   }
 
   makeLoading() {
     this.color = '#FFCA28';
-    this.buttonText = 'Pending..';
-    this.isLoading = true
+    this.buttonText = 'Pending...';
+    this.isLoading = true;
     this.serverStatus = 'Loading';
   }
 
   sendServerAction(isOnline: boolean) {
-    console.log('Send Server Action Called!!!')
+    console.log('sendServerAction called!');
     this.makeLoading();
-    const payLoad = this.buildPayload(isOnline);
-    this.serverAction.emit(payLoad);
+    const payload = this.buildPayload(isOnline);
+    this.serverAction.emit(payload);
   }
 
   buildPayload(isOnline: boolean): ServerMessage {
@@ -65,9 +60,8 @@ export class ServerComponent implements OnInit {
     } else {
       return {
         id: this.serverInput.id,
-        payload: 'active'
+        payload: 'activate'
       };
     }
   }
-
 }

@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Server } from 'src/app/shared/server';
 import { ServerService } from 'src/app/shared/services/server.service';
 import { Observable, Subscription, timer } from 'rxjs';
+import { ServerMessage } from 'src/app/shared/server-message';
 
 // const SAMPLE_SERVERS = [
 //   {id: 1, name: 'dev-sit', isOnline: false},
@@ -43,6 +44,12 @@ export class SectionHealthComponent implements OnInit, OnDestroy {
 
   subscribeToData() {
     this.timerSubscription = timer(5000).subscribe(() => this.refreshData());
+  }
+
+  sendMessage(msg: ServerMessage) {
+    this.serverService.handleServerMessage(msg)
+    .subscribe( res => console.log('Message sent to server: ', msg), err => console.log('Error: ', err)
+    );
   }
 
 }
